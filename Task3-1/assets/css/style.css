@@ -1,0 +1,172 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    width:100vw;
+    height:80px;
+    background-color: black;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+.second-nav-part{
+    display: flex;
+    gap:20px
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+a:hover{
+    color: forestgreen;
+}
+#hero{
+    height:100vh;
+    background-color:#36eb88;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#hero .pic{
+    position: relative;
+}
+#hero .pic .circle{
+    width: 220px;
+    height: 220px;
+    background-color: forestgreen;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+#hero .pic img{
+    width: 220px;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left: 30px;
+}
+.start::after,.start::before{
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 1px;
+    background-color: black;
+}
+#PortFolio,#About,#Contact,#Location,footer{ 
+    width: 100vw;
+    background-color:#36eb88;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 80PX 0PX 25PX;
+    border: 1px solid black;
+}
+#PortFolio,#Contact{
+    background-color: white;
+}
+#PortFolio h1{
+    color: black;
+}
+.container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.first-container ,.second-container,.first-p,.second-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border: 1px solid #36eb88;
+}
+.card img{
+    width: 125px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.first-p,.second-p{
+    max-width: 250PX;
+}
+.download{
+    border: 1px solid  black;
+    color: black;
+    padding: 10px;
+    border-radius: 10%;
+}
+form{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    color: gray;
+}
+input ,textarea{
+    text-align: center;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+}
+button{
+    width: 80px;
+    background-color:#36eb88 ;
+    color: white;
+    border: 1px solid #36eb88;
+    border-radius: 10%;
+}
+#location{
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+       gap: 40px;
+}
+.About-freelancer{
+    width: 200PX;
+}
+.icon{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.border{
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 7px;
+}
+footer ,#Contact{
+    padding: 80px 0px 0px;
+    flex-wrap: wrap;
+}
+footer{
+    height: 50px;
+    background-color:black;
+    color: white;
+}
+footer p{
+    margin-bottom: 50px;
+}
+
